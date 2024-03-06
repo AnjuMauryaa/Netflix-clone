@@ -1,0 +1,397 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+;
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+body{
+    background-color: black;
+    overflow-x:hidden;
+
+}
+
+.main{
+ 
+    background-image: url(Netfilx/images/background1.jpeg);
+    background-position:center top;
+    background-repeat: no-repeat;
+    background-size: max(1000px , 100vw);   /*max*/
+    height:100vh;
+    position: relative;
+}
+
+.main .bg{
+    height: 100vh;
+    width:100%;
+    opacity: 0.74;
+    position:absolute;
+    top:0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;
+    padding:2.78rem 0;
+}
+
+nav img{
+    width:9.25rem;
+    height: 2.5rem;
+    position:relative;
+    z-index:10;   /*z index   pop out*/
+}
+
+nav button{
+    position: relative;
+    z-index: 10;     /*z index   pop out        */
+}
+
+.hero{
+    height:90%;         /*middle */
+    margin:20px;                 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;                 /* pop out*/
+    font-family: "Martel Sans", sans-serif;
+
+    font-size: 3.5rem;
+    font-weight: 700;
+
+    line-height: 125%;
+    text-align: center;
+}
+
+.hero .main_line{
+    font-size: 1.15rem;
+    margin-top: -8px;
+    text-align: center;
+}
+
+.main-second-line{
+    font-size: 1rem;
+    margin-top: -8px;
+    text-align: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;  
+    cursor: pointer;
+}
+
+ .button button{
+    padding: 5px 24px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: red;
+    border-radius: 4px;
+    color:white;
+    border:none;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.button button:hover{
+    background-color: rgb(201, 0, 0);
+}
+
+.btn-red:hover{
+    background-color: rgb(201, 0, 0);
+}
+
+.button input{
+    padding: 16px 130px;
+    text-align: start;
+    background-color: rgba(23,23,23,0.6);
+    border:01px solid rgba(255, 243, 243, 0.5);
+    color:white;
+}
+
+
+
+.btn{
+    padding:3px 8px;
+    font-weight: 400;
+    background-color: white;
+    border-radius: 5px ;
+    padding: 5px 10px;
+    border:1px solid white;
+    cursor: pointer;
+}
+
+.btn-english{
+    background-color: rgba(23,23,23,0.6);;
+    color:white;
+    margin-right: 5px;
+    border:1px solid rgba(255, 243, 243, 0.5);
+    
+}
+
+.btn-red{
+    background-color: red;
+    color:white;
+    border:1px solid rgba(255, 0, 0, 0.5);
+}
+
+.section-class{
+    border:2px solid red;
+   margin-bottom:60px;
+}
+
+
+.section-second-class{
+    background-color: #670000;
+    background-image: linear-gradient(225deg, #670000 0%, #004258 50%, #6d3233 100%);
+    
+    
+
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: center;
+
+max-width: 78vw;
+margin: 0 auto;
+border-radius: 20px;
+
+padding: 30px 40px;
+}
+
+
+.section-second-class .first{
+    font-size: 32px;
+    color:white;
+    font-weight: bold;
+}
+
+
+.section-second-class .second{
+    font-size: 18px;
+    color:white;
+}
+
+.seciton-third-class{
+    display: flex;
+    flex-direction: column;
+    max-width: 78vw;
+    margin: 65px auto;
+}
+
+.seciton-third-class div{
+    color:white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.grid-start{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.grid{
+    background-color: #000a3b;
+    background-image: linear-gradient(90deg, #000a3b 0%, #01063b 33%, #000c3e 66%, #020c4a 100%);
+    
+
+    height:350px;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    margin-right:15px;
+    margin-top:12px;
+    gap:10px;
+    padding:20px 10px;
+    border-radius: 15px;
+}
+
+.grid .first{
+    font-size: 24px;
+    font-weight: 500px;
+}
+
+.grid .second{
+    font-size: 15px;
+    font-weight: 300px;
+}
+
+@media screen and (max-width:1200px){
+    .grid-start{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .grid{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .grid-start{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .grid{
+        height: 150px;
+    }
+}
+
+.faq{
+    display: flex;
+    max-width: 78vw;
+    margin: 0 auto;
+    row-gap:10px;
+    flex-direction: column;
+    margin-bottom: 65px;
+}
+
+.faq h2{
+    color:white;
+}
+.faq-box{
+    display: flex;
+    flex-direction: row;
+   
+    background-color: rgb(73, 68, 68);
+    padding:20px;
+
+    transition: all 0.5s ease-out;
+}
+
+.faq-box span{
+    font-size: 25px;
+    font-weight: 500;
+    color:white;
+    cursor: pointer;
+}
+
+.faq-box:hover{
+    background-color: rgb(87, 87, 87);
+    cursor: pointer;
+}
+
+.section-fourth-class{
+    max-width: 78vw;
+    margin:auto;
+}
+.section-fourth-class span{
+    color:white;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.btn1 input{
+    width:800px;
+
+}
+
+.btn1{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.last{
+    color:white;
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 75vw;
+    
+}
+
+@media screen and (max-width:950px){
+    .footer{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .footer{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .btn2 input{
+        width:400px;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    .btn2 input{
+        width:500px;
+    }
+}
+
+@media screen and (max-width:1305px){
+    .button {
+        row-gap: 15px;
+        flex-direction: column;
+    }
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-bottom: 20px;
+}
+
+.footer a{
+    color:white;
+    font-size: 14px;
+}
+
+.last-button{
+    margin:20px 0;
+    width:auto;
+}
+
+.last-line{
+    font-size: 14px;
+    color:white;
+    max-width: 75vw;
+    margin:auto;
+    padding-bottom:100px;
+    padding-top:20px;
+}
+
+
+
+@media screen and (max-width:800px){
+    html,body{
+        margin:0;
+        padding:0;
+        overflow-x: hidden;
+        width:100%;
+        height: 100%;
+    }
+}
+
+/* Above media query is written so that on resizing --> whitespace on right side of webpage do not come. */
